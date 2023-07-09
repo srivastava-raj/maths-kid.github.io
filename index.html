@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>homepage</title>
+    <style>
+        body{
+            background-color:rgb(210, 140, 202);
+        }
+        #raj
+        {
+            margin-top:100px;
+            margin-left:100px;
+            position:relative;
+        }
+
+        #ram
+        {
+            margin-left:700px;
+            position:relative;
+        }
+        
+
+        .kit{
+            padding-top:40px;
+            margin-top:100px;
+            width:200px;
+            height:200px;
+            background-color:aqua;
+            position:absolute;
+            margin-left:600px;
+        }
+
+        #pin{
+            background-color:orangered;
+        }
+        #kim{
+            text-emphasis-color: white;
+        }
+
+        #kiet{
+           background-color:red;
+        }
+
+
+        @media  (max-width:600px)
+        {
+            #raj{
+                margin-left:15px;
+                width:100px;
+                height:200px;
+               
+            }
+
+            .kit
+            {
+                margin-left:170px;
+                width:100px;
+                height:170px;
+                
+               
+                
+            }
+
+            #ram{
+                margin-left:200px;
+                width:100px;
+                height:200px;
+               
+            } 
+        }
+    </style>
+</head>
+<body>
+
+    <center>
+        <div id="pin">
+        <h1>Welcome</h1>
+         <h1 id="kim"></h1>
+         </div>
+    </center>
+   <center>
+    <div class="kit">
+    <a href="https://byjus.com/maths/addition/" >Addition</a ><br>
+    <br>
+    <a href="https://byjus.com/maths/subtraction/" >Subtraction</a><br>
+    <br>
+    <a href="https://byjus.com/maths/multiplication/" >Multiplication</a><br>
+    <br>
+    <a href="https://byjus.com/maths/division/" >Division</a><br>
+    <br>
+    </div>
+    </center>
+
+    
+    
+    
+    <img src="https://w7.pngwing.com/pngs/96/163/png-transparent-cartoon-zebra-zebra-mammal-cat-like-mammal-animals-thumbnail.png" height="400px"  width="250px" id="raj">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTP4wrtihGv2NDk44scpR7ZlFG4C42vdNZoHw&usqp=CAU" height="400px" width="250px" id="ram">
+    <script>
+    
+        let name = prompt("Enter Your Name Here!")
+        document.getElementById('kim').innerHTML=name+"!";
+    </script>
+</body>
+</html>
